@@ -1,7 +1,7 @@
 
 # Lab: Class 06
 
-## basic-authr
+## Basic-Authentication
 
 ### Deployment Link
 - https://basic-authh.herokuapp.com/
