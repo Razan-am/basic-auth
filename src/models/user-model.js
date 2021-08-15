@@ -1,11 +1,10 @@
 'use strict';
 
 
-const UserModel =(sequelize, DataTypes)=>sequelize.define('auth', {
+const UserModel =(sequelize, DataTypes)=>sequelize.define('user', {
   username: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true, 
   },
   password: {
     type: DataTypes.STRING,
@@ -13,4 +12,4 @@ const UserModel =(sequelize, DataTypes)=>sequelize.define('auth', {
   },
 });
 
-module.exports=UserModel;
+module.exports= UserModel;
