@@ -6,9 +6,13 @@ const bcrypt =require('bcrypt');
 const signIn= require('./middleware/authmiddle');
 const {UserModel}=require('./models/index');
 
+router.get ('/',(req,res)=>{
+  res.send('everything is working fine');
+});
+
 router.get ('/status',(req,res)=>{
   res.send({
-    domain:'https://basic-express-ser.herokuapp.com/',
+    domain:'https://basic-authh.herokuapp.com/',
     status:'running',
     port:'8000',
   });
